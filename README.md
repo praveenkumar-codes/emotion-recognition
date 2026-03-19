@@ -1,40 +1,32 @@
-# Emotion AI Dashboard
+# Emotion Recognition System
 
 A real-time Image-Based Emotion Recognition System built using Deep Learning and Hugging Face pre-trained models.
-This project detects human emotions from images and live webcam feeds through a modern web dashboard.
+This application detects human emotions from uploaded images and live webcam input through a web interface.
 
 ---
 
 ## Features
 
 * Real-time Webcam Emotion Detection
-* Image Upload and Prediction
+* Image Upload and Emotion Prediction
 * Pre-trained Deep Learning Model (Hugging Face)
-* Interactive Web Dashboard using Flask
+* Web-based Dashboard using Flask
 * Fast and Accurate Predictions
-* Clean and Responsive UI
 
 ---
 
 ## Project Structure
 
 ```
-emotion_ai_dashboard/
+emotion-recognition/
 │
-├── static/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   ├── uploads/
+├── static/              # CSS, JS, uploaded images
+├── templates/           # HTML files (UI)
 │
-├── templates/
-│   └── index.html
-│
-├── app.py
-├── model.py
-├── requirements.txt
-└── README.md
+├── app.py               # Flask backend
+├── model.py             # Emotion prediction logic
+├── requirements.txt     # Dependencies
+└── README.md            # Project documentation
 ```
 
 ---
@@ -44,8 +36,8 @@ emotion_ai_dashboard/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/emotion-ai-dashboard.git
-cd emotion-ai-dashboard
+git clone https://github.com/YOUR_USERNAME/emotion-recognition.git
+cd emotion-recognition
 ```
 
 ### Install Dependencies
@@ -74,9 +66,9 @@ http://127.0.0.1:5000/
 
 This project uses a pre-trained model from Hugging Face:
 
-* dima806/facial_emotions_image_detection
+dima806/facial_emotions_image_detection
 
-No training is required. The model is ready for real-time inference.
+The model is already trained and ready for inference.
 
 ---
 
@@ -103,10 +95,10 @@ No training is required. The model is ready for real-time inference.
 ## How It Works
 
 1. User uploads an image or uses the webcam
-2. Image or frame is sent to the Flask backend
-3. The Hugging Face model processes the image
-4. Emotion prediction is generated
-5. Result is displayed on the dashboard
+2. Image/frame is sent to the Flask backend
+3. The model processes the input
+4. Emotion is predicted
+5. Result is displayed on the web page
 
 ---
 
@@ -124,17 +116,6 @@ No training is required. The model is ready for real-time inference.
 * Input: Frame (image blob)
 * Output: Emotion and confidence score
 
----
-
-## Future Improvements
-
-* Multi-face detection
-* Faster inference using ONNX or TensorRT
-* Mobile application integration
-* Voice assistant integration
-* IoT or robotics integration
-
----
 
 ## Author
 
