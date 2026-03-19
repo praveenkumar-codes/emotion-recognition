@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+img, video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}

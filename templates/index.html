@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion AI Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>🧠 Emotion Recognition Dashboard</h1>
+
+<div class="container">
+
+    <!-- Upload Section -->
+    <div class="card">
+        <h2>📤 Upload Image</h2>
+        <input type="file" id="imageInput">
+        <button onclick="uploadImage()">Predict</button>
+        <img id="preview">
+        <h3 id="result"></h3>
+    </div>
+
+    <!-- Webcam Section -->
+    <div class="card">
+        <h2>📷 Live Webcam</h2>
+        <video id="video" autoplay></video>
+        <button onclick="startWebcam()">Start</button>
+        <h3 id="liveResult"></h3>
+    </div>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
